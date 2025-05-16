@@ -7,23 +7,23 @@ export default function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-14 max-w-6xl mx-auto items-center">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <span className="font-bold">Acme</span>
+          <span className="font-bold">Agentes de Conversão</span>
         </Link>
         <nav className="flex flex-1 items-center space-x-6 text-sm font-medium">
           <Link
             href="/solutions"
             className="transition-colors hover:text-primary"
           >
-            Solutions
+            Nossos Agentes
           </Link>
           <Link
             href="/industries"
             className="transition-colors hover:text-primary"
           >
-            Industries
+            Empresas
           </Link>
           <Link href="/about" className="transition-colors hover:text-primary">
-            About Us
+            Sobre nós
           </Link>
         </nav>
         <div className="flex items-center space-x-4">
@@ -38,10 +38,10 @@ export default function Navbar() {
             </Button>
           </a>
           <Button variant="ghost" size="sm">
-            Contact
+            Contato
           </Button>
           <Button size="sm" asChild>
-            <a href="/dashboard">Go to dashboard</a>
+            <a href="/dashboard">Acessar minha conta</a>
           </Button>
         </div>
       </div>
