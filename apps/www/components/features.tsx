@@ -48,12 +48,9 @@ export default function Features() {
   return (
     <section className="container space-y-16 py-24 md:py-32">
       <div className="mx-auto max-w-[58rem] text-center">
-        <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
-          Seu concorrente já implementou isso. E você?
-        </h2>
-        <p className="mt-4 text-muted-foreground sm:text-lg">
-          Empresas que não usam IA para vender em 2025 são como quem insistia no fax quando o email já existia. A escolha é simples: evolua ou seja esquecido.
-        </p>
+        <h3 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
+          A escolha é simples: evolua ou seja esquecido.
+        </h3>
       </div>
       <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
         {features.map(feature => (
