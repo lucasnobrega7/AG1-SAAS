@@ -1,63 +1,58 @@
 import {
-  Brain,
-  Cloud,
-  Shield,
-  Zap,
+  MessageSquare,
   Database,
-  Code,
-  BarChart2,
-  CreditCard,
+  Zap,
+  Brain,
+  LineChart,
+  Clock
 } from "lucide-react";
-
 const features = [
   {
-    name: "Type-Safe Development",
+    name: "Vendedores Digitais 24/7",
     description:
-      "Full TypeScript support across the entire codebase for robust, maintainable code.",
-    icon: Code,
+      "Enquanto seus concorrentes dormem, nossos agentes fecham negócios às 3 da manhã. Sem férias, sem licença médica, sem reclamações de salário — apenas vendas implacáveis em cada segundo do dia.",
+    icon: Clock,
   },
   {
-    name: "Real-time Analytics",
+    name: "WhatsApp Que Vende Por Você",
     description:
-      "Comprehensive analytics powered by PostHog to track user behavior and optimize your product.",
-    icon: BarChart2,
+      "Transforme seu WhatsApp em uma máquina de vendas automática. Sem demora nas respostas, sem cliente abandonado, sem oportunidade perdida. Seu concorrente ainda digita manualmente enquanto você já fechou o negócio.",
+    icon: MessageSquare,
   },
   {
-    name: "Secure Authentication",
+    name: "Base De Conhecimento Inteligente",
     description:
-      "Enterprise-grade authentication with Supabase, protected against the latest security vulnerabilities.",
-    icon: Shield,
-  },
-  {
-    name: "Seamless Payments",
-    description:
-      "Integrated Stripe payments and Update billing for hassle-free subscription management.",
-    icon: CreditCard,
-  },
-  {
-    name: "Cloud-Native Architecture",
-    description:
-      "Built on Next.js 15 with App Router & Server Components for optimal performance.",
-    icon: Cloud,
-  },
-  {
-    name: "Scalable Database",
-    description:
-      "Powerful Supabase database with real-time capabilities and automatic backups.",
+      "Carregue qualquer documento e nosso sistema devora tudo em segundos. Manuais técnicos, catálogos de produtos, FAQs — conhecimento que sua equipe levaria meses para dominar, disponível instantaneamente.",
     icon: Database,
   },
+  {
+    name: "Implantação Em Minutos",
+    description:
+      "Pare de jogar dinheiro em consultores caros. Enquanto eles estão elaborando cronogramas, você já pode estar fechando vendas. Sem código, sem complicação, sem demora. Configure hoje, venda amanhã.",
+    icon: Zap,
+  },
+  {
+    name: "Análise De Conversão Brutal",
+    description:
+      "Saiba exatamente onde você está perdendo dinheiro. Monitore cada conversa, identifique gargalos de vendas e descubra por que seus clientes somem. Dados crus que transformam prejuízos em lucros.",
+    icon: LineChart,
+  },
+  {
+    name: "IA Que Aprende Com Cada Conversa",
+    description:
+      "Enquanto vendedores humanos repetem os mesmos erros, nossos agentes ficam mais inteligentes a cada interação. Objeções de vendas, perguntas técnicas, problemas de produto — tudo registrado e otimizado automaticamente.",
+    icon: Brain,
+  },
 ];
-
 export default function Features() {
   return (
     <section className="container space-y-16 py-24 md:py-32">
       <div className="mx-auto max-w-[58rem] text-center">
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">
-          Cutting-Edge Solutions
+          Seu concorrente já implementou isso. E você?
         </h2>
         <p className="mt-4 text-muted-foreground sm:text-lg">
-          Discover how Acme can transform your business with our innovative
-          technologies.
+          Empresas que não usam IA para vender em 2025 são como quem insistia no fax quando o email já existia. A escolha é simples: evolua ou seja esquecido.
         </p>
       </div>
       <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
