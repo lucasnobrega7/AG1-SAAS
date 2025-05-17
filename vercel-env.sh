@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Configurar variáveis de ambiente no Vercel CLI
+
+# Variáveis públicas
+echo "phx_1jT1b88OvdM5IDkye31q6gqliPLWlouLUUQa3v3VQAgWWua" | vercel env add NEXT_PUBLIC_POSTHOG_KEY
+echo "https://jiasbwazaicmcckmehtn.supabase.co" | vercel env add NEXT_PUBLIC_SUPABASE_URL
+echo "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImppYXNid2F6YWljbWNja21laHRuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDcwMTk3MTcsImV4cCI6MjA2MjU5NTcxN30.ylb91zHcJ_RN7s_pOUDIjx9YM2gq_Lp1JtW3upmZII4" | vercel env add NEXT_PUBLIC_SUPABASE_ANON_KEY
+echo "pk_test_cmVsaWV2ZWQtYmx1ZWpheS00NS5jbGVyay5hY2NvdW50cy5kZXYk" | vercel env add NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+
+# Variáveis privadas
+echo "972VoGGRqBqEzvCkWphQ96KGCPucWhRhgB5stgJrGJxDO8Xd9ftaFfjivSu8+gA7sJ4AODdl0rJW7mGQSRyqrQ==" | vercel env add SUPABASE_JWT_SECRET
+echo "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImppYXNid2F6YWljbWNja21laHRuIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc0NzAxOTcxNywiZXhwIjoyMDYyNTk1NzE3fQ.8ofzu7Hhe-Hokju4B6M51bnlvH1HvtGOoAExHLuuZj8" | vercel env add SUPABASE_SERVICE_ROLE
+echo "sk_test_4tGzEGNX92PoeZaxfsONPve7oe70keBazBiQuldEq4" | vercel env add CLERK_SECRET_KEY

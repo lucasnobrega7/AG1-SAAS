@@ -4,10 +4,5 @@
   "root": "../../",
   "buildCommand": "pnpm build --filter=dashboard...",
   "installCommand": "pnpm install",
-  "ignoreCommand": "git diff HEAD^ HEAD --quiet ./apps/dashboard",
-  "env": {
-    "NEXT_PUBLIC_POSTHOG_KEY": "@posthog_key",
-    "NEXT_PUBLIC_SUPABASE_URL": "@supabase_url",
-    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "@supabase_anon_key"
-  }
+  "ignoreCommand": "git diff HEAD^ HEAD --quiet ./apps/dashboard"
 }
