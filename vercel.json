@@ -1,1 +1,4 @@
-{}
+{
+  "buildCommand": "pnpm turbo run build",
+  "installCommand": "pnpm install"
+}
