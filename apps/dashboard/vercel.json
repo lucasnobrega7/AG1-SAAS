@@ -1,8 +1,0 @@
-{
-  "version": 2,
-  "framework": "nextjs",
-  "root": "../../",
-  "buildCommand": "pnpm build --filter=dashboard...",
-  "installCommand": "pnpm install",
-  "ignoreCommand": "git diff HEAD^ HEAD --quiet ./apps/dashboard"
-}

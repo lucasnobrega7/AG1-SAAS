@@ -1,8 +1,0 @@
-{
-  "version": 2,
-  "framework": "nextjs",
-  "root": "../../",
-  "buildCommand": "pnpm build --filter=www...",
-  "installCommand": "pnpm install",
-  "ignoreCommand": "git diff HEAD^ HEAD --quiet ./apps/www"
-}
