@@ -1,1 +1,22 @@
-{}
+{
+  "projects": [
+    {
+      "name": "ag1-saas-www",
+      "root": "apps/www",
+      "framework": "nextjs",
+      "buildCommand": "cd ../.. && pnpm install && pnpm run build --filter=www",
+      "outputDirectory": "apps/www/.next",
+      "installCommand": "pnpm install",
+      "domains": ["agentesdeconversao.com.br", "www.agentesdeconversao.com.br"]
+    },
+    {
+      "name": "ag1-saas-dashboard", 
+      "root": "apps/dashboard",
+      "framework": "nextjs",
+      "buildCommand": "cd ../.. && pnpm install && pnpm run build --filter=dashboard",
+      "outputDirectory": "apps/dashboard/.next",
+      "installCommand": "pnpm install",
+      "domains": ["dashboard.agentesdeconversao.com.br"]
+    }
+  ]
+}
