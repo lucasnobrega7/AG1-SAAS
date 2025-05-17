@@ -1,13 +1,6 @@
 {
+  "framework": "nextjs",
+  "buildCommand": "pnpm run build",
   "installCommand": "pnpm install",
-  "builds": [
-    {
-      "src": "apps/www/package.json",
-      "use": "@vercel/next"
-    },
-    {
-      "src": "apps/dashboard/package.json",
-      "use": "@vercel/next"
-    }
-  ]
+  "ignoreCommand": "git diff HEAD^ HEAD --quiet ."
 }
