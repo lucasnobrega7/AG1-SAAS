@@ -30,7 +30,8 @@
     "LANGSMITH_API_KEY",
     "LANGSMITH_PROJECT",
     "LANGCHAIN_PROJECT_KEY",
-    "RESEND_API_KEY"
+    "RESEND_API_KEY",
+    "NEXT_PUBLIC_SITE_URL"
   ],
   "ui": "tui",
   "tasks": {
@@ -63,7 +64,8 @@
         "LANGSMITH_API_KEY",
         "LANGSMITH_PROJECT",
         "LANGCHAIN_PROJECT_KEY",
-        "RESEND_API_KEY"
+        "RESEND_API_KEY",
+        "NEXT_PUBLIC_SITE_URL"
       ]
     },
     "lint": {

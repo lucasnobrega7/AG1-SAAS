@@ -5,6 +5,12 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  env: {
+    NEXT_PUBLIC_SITE_URL: "https://agentesdeconversao.com.br",
+  },
+  images: {
+    domains: ["agentesdeconversao.com.br", "www.agentesdeconversao.com.br"],
+  },
   async rewrites() {
     return [
       {
