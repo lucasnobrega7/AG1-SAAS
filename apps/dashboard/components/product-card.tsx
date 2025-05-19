@@ -1,5 +1,4 @@
 import { cn } from "@/utils/styles";
-import { Button } from "@repo/ui";
 
 export default function ProductCard({
   title,
@@ -37,7 +36,7 @@ export default function ProductCard({
         <div className="space-y-4">
           <div className="flex items-baseline">
             <span className="font-medium text-foreground">{displayPrice}</span>
-            {interval != null && (
+            {interval && (
               <span className="text-sm text-muted-foreground">/{interval}</span>
             )}
           </div>
