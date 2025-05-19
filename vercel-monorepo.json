@@ -1,0 +1,23 @@
+{
+  "buildCommand": "pnpm turbo run build",
+  "installCommand": "pnpm install",
+  "framework": null,
+  "outputDirectory": "apps/www/.next",
+  "devCommand": "pnpm turbo run dev",
+  "builds": [
+    {
+      "src": "apps/www/package.json",
+      "use": "@vercel/next",
+      "config": {
+        "outputDirectory": ".next"
+      }
+    },
+    {
+      "src": "apps/dashboard/package.json", 
+      "use": "@vercel/next",
+      "config": {
+        "outputDirectory": ".next"
+      }
+    }
+  ]
+}
