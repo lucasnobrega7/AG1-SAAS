@@ -1,6 +1,7 @@
 {
   "buildCommand": "pnpm turbo run build",
   "installCommand": "pnpm install",
+  "framework": null,
   "outputDirectory": "apps/www/.next",
   "ignoreCommand": "npx turbo-ignore"
 }
