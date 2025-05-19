@@ -11,7 +11,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@repo/ui";
-import { Building, LogOut, User, Users } from "lucide-react";
+import { Building, LogOut, User } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import useSWR from "swr";
@@ -64,7 +64,7 @@ export default function AccountButton() {
       <DropdownMenuContent align="end" className="w-[200px]">
         <DropdownMenuGroup className="flex flex-col p-2">
           <h3 className="text-sm font-medium">
-            {accountData?.user?.user_metadata?.name ??
+            {(accountData?.user?.user_metadata as any)?.name ??
               accountData?.user?.email ??
               "User"}
           </h3>

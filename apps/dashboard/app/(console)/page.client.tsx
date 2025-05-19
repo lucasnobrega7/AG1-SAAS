@@ -71,7 +71,7 @@ export default function Console({
   } satisfies ChartConfig;
 
   const showPaidContent =
-    subscriptionData != null &&
+    subscriptionData &&
     subscriptionData.length > 0 &&
     subscriptionData[0].status === "active";
 

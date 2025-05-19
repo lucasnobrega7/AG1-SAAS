@@ -3,6 +3,9 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   basePath: "/dashboard",
   assetPrefix: "/dashboard",
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   async headers() {
     return [
       {

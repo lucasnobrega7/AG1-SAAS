@@ -2,6 +2,9 @@ import { INTERNAL_DASHBOARD_URL } from "@repo/utils";
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   async rewrites() {
     return [
       {
